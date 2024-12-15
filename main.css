@@ -1,0 +1,184 @@
+/* Global Stil ve Renk Paleti */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2e2e2e; /* Koyu gri arka plan */
+  color: #f1f1f1; /* Beyaz yazı rengi */
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #e6e6e6; /* Başlıklar için açık gri */
+}
+
+/* Tablo Stilini Düzenleyelim */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #3a3a3a; /* Antrasit gri arka plan */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #444444; /* Koyu gri alt sınır */
+}
+
+th {
+  background-color: #555555; /* Antrasit tonlarında başlık arka planı */
+  color: #ffffff;
+  font-size: 16px;
+}
+
+td {
+  background-color: #3a3a3a;
+  color: #ddd;
+  font-size: 14px;
+}
+
+tr:nth-child(even) {
+  background-color: #2c2c2c; /* Satır arka planını koyulaştır */
+}
+
+tr:hover {
+  background-color: #4d4d4d; /* Hover etkisi */
+}
+
+/* Arama çubuğu ve sıralama butonuna stil ekleyelim */
+input[type="text"] {
+  width: 250px;
+  padding: 12px;
+  margin: 20px 0;
+  background-color: #444444;
+  color: #f1f1f1;
+  border: 1px solid #333333;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #ff9f00; /* Sarı altı çizgi fokus olduğunda */
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #ff9f00; /* Sarımsı turuncu buton */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff7f00; /* Hover efekti */
+}
+
+/* Sayfalama kısmı */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  background-color: #444444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.pagination button:hover {
+  background-color: #555555;
+}
+
+/* Seçilen karakterin detayları */
+.character-detail {
+  background-color: #3a3a3a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+}
+
+.character-detail h2 {
+  color: #ff9f00;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  input[type="text"] {
+    width: 200px;
+  }
+
+  .pagination button {
+    padding: 8px 12px;
+  }
+}
+
+
+
+.character-detail {
+  background-color: #3a3a3a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+}
+
+.character-detail h2 {
+  color: #ff9f00;
+  margin-bottom: 10px;
+}
+
+.character-detail p {
+  color: #ddd;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.detail-container {
+  display: flex;
+  align-items: center;
+}
+
+.character-image {
+  margin-right: 20px;
+}
+
+.character-image img {
+  border-radius: 8px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.character-info {
+  max-width: 500px;
+}
+
+.character-info p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.character-info strong {
+  color: #ff9f00;
+}
